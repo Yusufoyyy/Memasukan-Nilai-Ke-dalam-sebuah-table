@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>YUSUF RAMBU RAMADHAN</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<script type="text/javascript">
+    let a=prompt("Masukkan Nama Siswa");
+document.write ("<hr>");
+document.write("<table width = '500' border='2'>");
+document.write('<tr><h1><th>Daftar Nilai ');
+    document.write(a,'</th>');
+    var nilai=prompt("Masukkan Nilai Pemograman Web Perangkat Bergerak")
+    var predikat = "";
+        
+    if (nilai >= 90){
+        predikat = "A"
+    } else if(nilai >= 80) {
+        predikat = "B"
+    } else if(nilai >= 70) {
+        predikat = "C"
+    } else if(nilai >= 60) {
+        predikat = "D"
+    } else { 
+        predikat = "E";
+    }
+
+    var nilai2=prompt("Masukkan Nilai Pemograman Berbasis Objek")
+    var predikat2 = "";
+
+    if (nilai2 >= 90){
+        predikat2 = "A"
+    } else if(nilai2 >= 80) {
+        predikat2 = "B"
+    } else if(nilai2 >= 70) {
+        predikat2 = "C"
+    } else if(nilai2 >= 60) {
+        predikat2 = "D"
+    } else { 
+        predikat2 = "E";
+    }
+    var nilai3=prompt("Masukkan Nilai Basis Data")
+    var predikat3 = "";
+    
+    if (nilai3 >= 90){
+        predikat3 = "A"
+    } else if(nilai3 >= 80) {
+        predikat3 = "B"
+    } else if(nilai3 >= 70) {
+        predikat3 = "C"
+    } else if(nilai3 >= 60) {
+        predikat3 = "D"
+    } else { 
+        predikat3 = "E";
+    }
+document.write('</table>');
+document.write("<table width = '500' border='2'>");
+document.write("<tr><th>No</th>");
+    document.write("<th>Mata Pelajaran</th>");
+        document.write("<th>Nilai Ulangan</th>");
+document.write("<th>Indeks Nilai</th><tr>");
+
+document.write("<tr><th>1</th>");
+    document.write("<th>Pemograman Web Perangkat Bergerak</th>");
+        document.write("<th>");
+            document.write(nilai,'</th>');
+document.write("<th>");
+    document.write(predikat,"</th><tr>");
+document.write("");
+
+document.write("<tr><th>2</th>");
+    document.write("<th>Pemograman Berbasis Objek</th>");
+        document.write("<th>");
+            document.write(nilai2,'</th>');
+document.write("<th>");
+    document.write(predikat2,"</th><tr>");
+    
+    document.write("<tr><th>3</th>");
+        document.write("<th>Basis Data</th>");
+            document.write("<th>");
+                document.write(nilai3,'</th>');
+    document.write("<th>");
+        document.write(predikat3,"</th><tr>");
+    document.write("</table>");
+
+
+
+</script>
+<body>
+</body>
+</html>
